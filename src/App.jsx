@@ -65,13 +65,13 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="container mx-auto rounded-lg p-4 bg-violet-100 my-5 min-h-[85vh]">
-        <div className="bg-violet-200 mx-5 border-solid shadow-md border-2 border-violet-900 p-4 rounded-lg">
+      <div className="container rounded-lg py-4 bg-violet-100 my-5 min-h-[85vh]">
+        <div className="bg-violet-200 mx-3 border-solid shadow-md border-2 border-violet-900 p-4 rounded-lg">
           <h1 className="font-bold text-lg">Add Todo</h1>
           <input onChange={(e) => setTodo(e.target.value)} value={Todo} type="text" name="todo" className="p-1 border rounded-md focus:outline-none focus:ring focus:border-violet-300 bg-white text-black" id="todo" />
           <button onClick={handleAdd} className="transition duration-300 ease-in-out bg-green-500 hover:bg-green-700 mx-3 text-white rounded-md p-1" >{BtnText}</button>
         </div>
-        <div className="bg-violet-200 mx-5 mt-4 border-solid border border-violet-700 p-4 rounded-lg">
+        <div className="bg-violet-200 mx-3 mt-4 border-solid border border-violet-700 p-4 rounded-lg">
           <h1 className="text-2xl font-bold text-center">Your Todos</h1>
           <input type="checkbox" onChange={handletoggleComp} checked={ToggleComp} className="mb-3" />Show Completed
           <hr className="mb-5" style={{ borderColor: 'black' }} />
